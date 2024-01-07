@@ -1,0 +1,127 @@
+/* Modify Jupyter Styles */
+#top-panel-wrapper,
+#jp-top-bar {
+    background-color: #ffffff !important;
+}
+
+#menu-panel-wrapper,
+#jp-MainMenu,
+#menu-panel {
+    background-color: #ffffff !important;
+}
+
+.jp-NotebookPanel-toolbar {
+    background-color: #ffffff !important;
+}
+
+.jp-Notebook {
+    background-color: #ffffff !important; 
+}
+
+.jp-Notebook .jp-Cell.jp-mod-active .jp-Collapser {
+    background: #7400eb !important; /* Replace with your desired background color */
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Trebuchet MS";
+    font-size: 24px;
+    color: #130061;
+}
+
+/* Paragraphs, Numbered Items (Ordered Lists), List Items within Numbered Lists */
+p {
+    font-family: "Trebuchet MS";
+    font-size: 18px;
+    color: #130061;
+}
+
+ol li, ul li {
+    font-family: "Trebuchet MS";
+    font-size: 18px;
+    color: #7400eb;
+}
+
+a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+table {
+    width: 100%; 
+    border-spacing: 20px;
+    background-color: white; 
+    /* border-collapse: collapse;  */
+}
+
+td {
+    width: 50.0%; 
+    padding: 40px;
+    /* background-color: #8980b0; */
+    vertical-align: top;
+    border: 1px solid #ddd;
+}
+
+
+/* Code cells */
+/* div.input_area {
+    font-family: "Courier new", monospace;
+    font-size: 22px;
+} */
+
+/* Markdown cells */
+/* div.text_cell_render {
+    font-family: "Courier new", monospace;
+    font-size: 18px;
+} */
+
+/* div.image-container { */
+    /* width: 200px;
+    height: 150px;
+    border: 1px solid #ccc;
+    text-align: center;
+} */
+
+.jp-CodeMirrorEditor .cm-line {
+    font-family: 'Courier', monospace; 
+    /* font-weight: bold; */
+    color: #4e4089;
+    font-size: 16px; 
+}
+
+/* keywords */
+/* .jp-CodeMirrorEditor .ͼs {
+    color: #7400eb; 
+} */
+
+/* = */
+.jp-CodeMirrorEditor .ͼ10 {
+    color: #4e4089; 
+}
+
+/* strings */
+.jp-CodeMirrorEditor .ͼ12 {
+    color: #7400eb; 
+}
+
+/* .jp-CodeMirrorEditor .ͼ14 {
+    color: #7400eb; 
+} */
+
+/* .jp-CodeMirrorEditor .ͼ19 {
+    color: #7400eb; 
+} */
+
+
+@media screen and (max-width: 600px) {
+    td {
+        /* Make td elements behave like full-width rows */
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+details::marker {
+    display: none; /* Specifically for Firefox to remove the triangle */
+}
